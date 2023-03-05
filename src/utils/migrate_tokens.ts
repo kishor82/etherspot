@@ -20,11 +20,12 @@ export const migrateTokens = async ({ redisClient, etherspotSdk, coinGeckoClient
         };
         // Map to ID
         symbolMap[coin.id] = tokenData;
-        delete symbolMap[mapKey];
+        delete symbolMap[mapKey]; 
       }
     }
   });
   await redisClient.set(TOKENS_KEY, JSON.stringify(symbolMap));
   const coinIDs = Object.keys(symbolMap);
   await redisClient.set(COIN_IDS, JSON.stringify(coinIDs));
+  console.log('New Cached Updated');
 };

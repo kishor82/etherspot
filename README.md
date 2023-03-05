@@ -1,3 +1,16 @@
+# Overview
+
+This API provides functionality for retrieving and managing token prices and fiat values.
+
+### Installation
+
+- Clone the repository
+- Run `nvm use` (if you have nvm installed) and `yarn` from the root directory to install dependencies
+- Start Redis server with `docker-compose up`
+- Start the server with `yarn start`
+- Navigate to `http://0.0.0.0:7781/documentation#` for API documentation.
+- Run `yarn test` to run tests
+
 # Backend Technical Test
 
 As part of this test, we’d like to see how you go about building a back-end service that ingests data from a service and

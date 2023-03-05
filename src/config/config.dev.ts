@@ -15,7 +15,7 @@ export = {
   },
   server: {
     host: '0.0.0.0',
-    port: 7782,
+    port: 7781,
     ssl: {
       enabled: false,
       certificate: '',

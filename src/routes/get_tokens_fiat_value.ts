@@ -14,7 +14,7 @@ export const getTokensFiatValueRoute = (server: Server, clients: Clients) => {
         query: Joi.object({
           pageNumber: Joi.number().min(1).default(1).optional(),
           pageSize: Joi.number().min(50).max(500).default(0).default(500).optional(),
-          currency: Joi.array().items(Joi.string()).default(['usa']).optional().single(),
+          currency: Joi.array().items(Joi.string()).default(['usd']).optional().single(),
         }),
       },
       handler: async (request) => {
