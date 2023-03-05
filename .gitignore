@@ -1,0 +1,11 @@
+node_modules/
+client/
+dist
+build/
+app.yaml
+# ignore all logs
+*.log
+cookies.json
+.env
+.env.local
+data/
